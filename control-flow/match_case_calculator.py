@@ -17,21 +17,19 @@ operator = input("Choose the operation (+, -, *, /): ")
 match operator:
     case '+':
         result = num1 + num2
-        print("The result is: ",result)
+        print(f"The result is {result}.")
     case '-':
         result = num1 - num2
-        print("The result is: ",result)
+        print(f"The result is {result}.")
     case '*':
         result = num1 * num2
-        print("The result is: ",result)
+        print(f"The result is {result}.",)
 
     case '/':
         if num2 == 0:
-            print("Zero division is not available: ")
+            print("Cannot divide by zero.")
         else:
             result = num1/num2
-            print("The result is: ",result)
-
-    
+            print(f"The result is {result}.")
     case _:
         print("Only valid operation")
